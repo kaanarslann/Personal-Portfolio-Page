@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-import ThemeSlider from "../components/ThemeSlider"
+import ThemeSlider from "./ThemeSlider"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons"
 import { faBars } from "@fortawesome/free-solid-svg-icons"
@@ -14,13 +14,13 @@ export default function Header() {
     
     return (
         <header className="flex flex-col py-2 px-10 bg-[#1B1B1B] gap-5">
-            <section className="header-top flex justify-between md:justify-end mx-5">
+            <section className="header-top flex justify-between md:justify-end">
                 <div className="header-buttons flex gap-5">
-                    <div className="theme flex gap-1">
+                    <div className="theme flex gap-1 items-center">
                         <ThemeSlider />
                         <span className="text-xs tracking-[1%] text-gray-400">Light Theme</span>
                     </div>
-                    <div className="language flex gap-1">
+                    <div className="language flex gap-1 items-center">
                         <ThemeSlider />
                         <span className="text-xs tracking-[1%] text-gray-400">English</span>    
                     </div>
@@ -34,7 +34,7 @@ export default function Header() {
             <section className={`toggle-header transition-all duration-300 ${isVisible ? "hidden" : "block"} md:block`}>
                 <div className="flex flex-col md:flex-row gap-10 md:gap-0 items-center justify-center md:justify-evenly">
                     <section className="header-nav flex">
-                        <nav className="flex flex-col md:flex-row gap-10 md:gap-15 font-[IBM_Plex_Mono] 
+                        <nav className="flex flex-col md:flex-row gap-10 md:gap-18 font-[IBM_Plex_Mono] 
                         text-center text-sm tracking-[1%] text-gray-400 justify-center">
                             <a>Home</a>
                             <a>Projects</a>

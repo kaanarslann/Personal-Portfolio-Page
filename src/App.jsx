@@ -1,12 +1,11 @@
-import Header from './sections/Header'
-
 import './App.css'
+import Hero from './sections/Hero'
 
 function App() {
 
   return (
     <>
-      <Header />
+      <Hero />
     </>
   )
 }
