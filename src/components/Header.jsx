@@ -34,7 +34,7 @@ export default function Header() {
             <section className={`toggle-header transition-all duration-300 ${isVisible ? "hidden" : "block"} md:block`}>
                 <div className="flex flex-col md:flex-row gap-10 md:gap-0 items-center justify-center md:justify-evenly">
                     <section className="header-nav flex">
-                        <nav className="flex flex-col md:flex-row gap-10 md:gap-18 font-[IBM_Plex_Mono] 
+                        <nav className="flex flex-col md:flex-row gap-10 md:gap-13 font-[IBM_Plex_Mono] 
                         text-center text-sm tracking-[1%] text-gray-400 justify-center">
                             <a>Home</a>
                             <a>Projects</a>
