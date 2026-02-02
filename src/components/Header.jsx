@@ -13,7 +13,7 @@ export default function Header() {
     };
     
     return (
-        <header className="flex flex-col py-2 px-10 bg-[#1B1B1B] gap-5">
+        <header className="flex flex-col py-2 px-10 md:pb-5 bg-[#1B1B1B] gap-5">
             <section className="header-top flex justify-between md:justify-end">
                 <div className="header-buttons flex gap-5">
                     <div className="theme flex gap-1 items-center">
@@ -32,10 +32,10 @@ export default function Header() {
                 </div>
             </section>
             <section className={`toggle-header transition-all duration-300 ${isVisible ? "hidden" : "block"} md:block`}>
-                <div className="flex flex-col md:flex-row gap-10 md:gap-0 items-center justify-center md:justify-evenly">
+                <div className="flex flex-col md:flex-row gap-10 md:gap-65 items-center justify-center md:justify-start px-30">
                     <section className="header-nav flex">
                         <nav className="flex flex-col md:flex-row gap-10 md:gap-13 font-[IBM_Plex_Mono] 
-                        text-center text-sm tracking-[1%] text-gray-400 justify-center">
+                        text-center text-sm tracking-[1%] text-gray-400">
                             <a>Home</a>
                             <a>Projects</a>
                             <a>About Me</a>

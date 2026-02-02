@@ -16,37 +16,39 @@ export default function Hero() {
 
 
     return(
-        <main className="bg-black">
-            <section className="header mb-15">
+        <main className="bg-black mx-auto px-10 md:px-20 md:h-screen">
+            <section className="header mb-15 md:mb-20">
                 <Header />
             </section>
-            <section className="hero flex items-center gap-5 md:gap-90 mx-10 md:mx-20 justify-center">
-                <article className="hero-info flex flex-col w-[55%] gap-5 md:gap-7 md:w-88 md:h-64">
-                    <h1 className="text-white font-[Raleway] font-extrabold text-5xl">Kaan Arslan</h1>
-                    <p className="text-gray-400 font-['IBM_Plex_Mono'] 
-                    text-sm leading-6 tracking-[1%] md:w-120">Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                        Minus harum hic dicta aliquam aliquid optio veritatis odit incidunt quos quis esse, libero officiis, 
-                        ex assumenda dignissimos illum enim nulla at.</p>
-                    <Button variant="hero">
-                        <span>Learn More</span><FontAwesomeIcon icon={faAngleRight} className="pt-0.5"/>
-                    </Button>
-                </article>
-                <figure className="hero-photo w-[45%] md:w-70 md:h-75">
-                    <img src={profilephoto}/>
-                </figure>
-            </section>
-            <section className="tech-stack flex flex-col mx-10 mt-10 gap-5 pb-15">
-                <div className="">
-                    <h3 className="font-['IBM_Plex_Mono'] text-white text-sm">Tech Stack I Build With</h3>
-                </div>
-                <div className="tech-logos flex justify-center gap-5 md:gap-11">
-                    <TechStack logo={JavaScript} title={"JavaScript"}/>
-                    <TechStack logo={React} title={"React.js"}/>
-                    <TechStack logo={HTML5} title={"HTML5"}/>
-                    <TechStack logo={TailwindCSS} title={"TailwindCSS"}/>
-                    <TechStack logo={SpringBoot} title={"Spring Boot"}/>
-                    <TechStack logo={PostgreSQL} title={"PostgreSQL"}/>
-                </div>
+                <section className="flex flex-col md:px-40">
+                    <section className="hero flex items-center gap-5 md:gap-80 justify-center md:justify-start">
+                    <article className="hero-info flex flex-col w-[55%] gap-5 md:gap-7 md:w-88 md:h-64">
+                        <h1 className="text-white font-[Raleway] font-extrabold text-5xl">Kaan Arslan</h1>
+                        <p className="text-gray-400 font-['IBM_Plex_Mono'] 
+                        text-sm leading-6 tracking-[1%] md:w-120">Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                            Minus harum hic dicta aliquam aliquid optio veritatis odit incidunt quos quis esse, libero officiis, 
+                            ex assumenda dignissimos illum enim nulla at.</p>
+                        <Button variant="hero">
+                            <span>Learn More</span><FontAwesomeIcon icon={faAngleRight} className="pt-0.5"/>
+                        </Button>
+                    </article>
+                    <figure className="hero-photo w-[45%] md:w-70 md:h-75">
+                        <img src={profilephoto}/>
+                    </figure>
+                </section>
+                <section className="tech-stack flex flex-col mt-10 md:mt-15 gap-5 pb-15">
+                    <div className="flex">
+                        <h3 className="font-['IBM_Plex_Mono'] text-white text-sm">Tech Stack I Build With</h3>
+                    </div>
+                    <div className="tech-logos flex justify-center gap-5 md:gap-15">
+                        <TechStack logo={JavaScript} title={"JavaScript"}/>
+                        <TechStack logo={React} title={"React.js"}/>
+                        <TechStack logo={HTML5} title={"HTML5"}/>
+                        <TechStack logo={TailwindCSS} title={"TailwindCSS"}/>
+                        <TechStack logo={SpringBoot} title={"Spring Boot"}/>
+                        <TechStack logo={PostgreSQL} title={"PostgreSQL"}/>
+                    </div>
+                </section>
             </section>
         </main>
     )
