@@ -1,7 +1,7 @@
 export default function Projects() {
     return (
-        <section>
-
+        <section className="projects">
+            
         </section>
     )
 }

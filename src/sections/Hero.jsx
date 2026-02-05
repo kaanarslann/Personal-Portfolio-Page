@@ -20,16 +20,16 @@ export default function Hero() {
             <section className="header mb-15 md:mb-20">
                 <Header />
             </section>
-                <section className="flex flex-col md:px-40">
-                    <section className="hero flex items-center gap-5 md:gap-80 justify-center md:justify-start">
-                    <article className="hero-info flex flex-col w-[55%] gap-5 md:gap-7 md:w-88 md:h-64">
+            <section className="flex flex-col">
+                <section className="hero flex items-center gap-5 md:gap-80 justify-center">
+                    <article className="hero-info flex flex-col w-[55%] gap-5 md:gap-7 md:w-88">
                         <h1 className="text-white font-[Raleway] font-extrabold text-5xl">Kaan Arslan</h1>
                         <p className="text-gray-400 font-['IBM_Plex_Mono'] 
                         text-sm leading-6 tracking-[1%] md:w-120">Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
                             Minus harum hic dicta aliquam aliquid optio veritatis odit incidunt quos quis esse, libero officiis, 
                             ex assumenda dignissimos illum enim nulla at.</p>
-                        <Button variant="hero">
-                            <span>Learn More</span><FontAwesomeIcon icon={faAngleRight} className="pt-0.5"/>
+                        <Button size="hero" color="hero">
+                            <span>Learn More</span><FontAwesomeIcon icon={faAngleRight} className="relative top-px"/>
                         </Button>
                     </article>
                     <figure className="hero-photo w-[45%] md:w-70 md:h-75">
@@ -37,10 +37,10 @@ export default function Hero() {
                     </figure>
                 </section>
                 <section className="tech-stack flex flex-col mt-10 md:mt-15 gap-5 pb-15">
-                    <div className="flex">
+                    <div className="flex mx-auto">
                         <h3 className="font-['IBM_Plex_Mono'] text-white text-sm">Tech Stack I Build With</h3>
                     </div>
-                    <div className="tech-logos flex justify-center gap-5 md:gap-15">
+                    <div className="tech-logos flex justify-center gap-5 md:gap-10">
                         <TechStack logo={JavaScript} title={"JavaScript"}/>
                         <TechStack logo={React} title={"React.js"}/>
                         <TechStack logo={HTML5} title={"HTML5"}/>
