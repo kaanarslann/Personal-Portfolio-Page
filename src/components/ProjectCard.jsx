@@ -7,17 +7,35 @@ export default function ProjectCard({direction, techs, tagColor, title, descript
     const {size, color, href} = buttonType;
 
     const tagColors = {
-        orange: "[#FFA217]",
-        blue: "[#000AFF]",
-        green: "[#2AB090]",
-        red: "[#E33636]"
+        orange: {
+            bg: "bg-[#FFA217]/20",
+            border: "border-[#FFA217]/20",
+            text: "text-[#FFA217]",
+        },
+        blue: {
+            bg: "bg-[#000AFF]/20",
+            border: "border-[#000AFF]/20",
+            text: "text-[#000AFF]",
+        },
+        green: {
+            bg: "bg-[#2AB090]/20",
+            border: "border-[#2AB090]/20",
+            text: "text-[#2AB090]",
+
+        },
+        red: {
+            bg: "bg-[#E33636]/20",
+            border: "border-[#E33636]/20",
+            text: "text-[#E33636]",
+        }
     }
 
     return (
-        <article className={`${direction}`}>
-            <details className="flex flex-col">
-                <div className={`project-tags border bg-${tagColors[tagColor]} rounded-[60px] opacity-100`}>
-                    <h4 className={`font-['IBM_Plex_Mono'] text-${tagColors[tagColor]} font-bold text-xs`}>{techs}</h4>
+        <article className={`${direction} justify-center items-center gap-5 md:gap-15`}>
+            <section className="flex flex-col px-20 md:px-0 gap-5 md:max-w-110">
+                <div className={`project-tags border ${tagColors[tagColor].border} 
+                ${tagColors[tagColor].bg} rounded-[60px] w-18 h-6 flex justify-center items-center`}>
+                    <h4 className={`font-['IBM_Plex_Mono'] ${tagColors[tagColor].text} font-bold text-xs`}>{techs}</h4>
                 </div>
                 <h1 className="project-title font-[Raleway] text-2xl text-black">
                     {title}
@@ -28,9 +46,10 @@ export default function ProjectCard({direction, techs, tagColor, title, descript
                 <Button size={size} color={color} href={href}>
                     <span>View Project</span><FontAwesomeIcon icon={faAngleRight} className="relative top-px"/>
                 </Button>
-            </details>
-            <figure>
-                <img className="project-picture w-111 h-75 rounded" src={picture}/>
+                <div className={`border-t-2 ${tagColors[tagColor].border} md:hidden`}></div>
+            </section>
+            <figure className="md:max-w-140">
+                <img className="project-picture w-111 h-75 rounded object-contain" src={picture}/>
             </figure>
         </article>
     )

@@ -9,10 +9,10 @@ export default function Button({size, color, href, children, ...props}) {
 
     const colors = {
         hero: "bg-[#1565C0] border-[#42A5F5] drop-shadow-[#1565C0]",
-        orange: "bg-[#FFA217] drop-shadow-[#FFA217]",
-        blue: "bg-[#000AFF] drop-shadow-[#000AFF]",
-        green: "bg-[#2AB090] drop-shadow-[#2AB090]",
-        red: "bg-[#E33636] drop-shadow-[#E33636]"
+        orange: "bg-[#FFA217]",
+        blue: "bg-[#000AFF]",
+        green: "bg-[#2AB090]",
+        red: "bg-[#E33636]"
     }
     
     const className = `${base} ${sizes[size]} ${colors[color]}`;
