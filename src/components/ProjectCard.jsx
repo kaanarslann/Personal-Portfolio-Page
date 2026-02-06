@@ -31,7 +31,7 @@ export default function ProjectCard({direction, techs, tagColor, title, descript
     }
 
     return (
-        <article className={`${direction} justify-center items-center gap-5 md:gap-15`}>
+        <article className={`${direction} justify-center items-center gap-5 md:gap-20`}>
             <section className="flex flex-col px-20 md:px-0 gap-5 md:max-w-110">
                 <div className={`project-tags border ${tagColors[tagColor].border} 
                 ${tagColors[tagColor].bg} rounded-[60px] w-18 h-6 flex justify-center items-center`}>

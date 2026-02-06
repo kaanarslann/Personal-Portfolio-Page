@@ -26,7 +26,7 @@ export default function Projects() {
     const projectP = "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae perferendis consequatur velit dicta labore ut facilis. Neque amet ex consequatur dolorum sapiente eveniet tempore maiores, voluptate nostrum. Earum, voluptates voluptate!";
     
     return (
-        <section className="projects flex flex-col justify-center mx-auto px-10 mt-10 gap-15">
+        <section className="projects flex flex-col justify-center mx-auto px-10 mt-10 gap-15 pb-20">
             <div className="projects-top flex flex-col justify-center gap-5 items-center">
                 <h1 className="text-[#080808] font-[Raleway] font-extrabold text-[34px] text-center">Case Studies</h1>
                 <p className="font-['IBM_Plex_Mono'] text-sm leading-6 tracking-[1%] text-[#9C9C9C] text-center px-10 md:w-1/2">
