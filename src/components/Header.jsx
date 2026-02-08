@@ -32,15 +32,14 @@ export default function Header() {
                 </div>
             </section>
             <section className={`toggle-header transition-all duration-300 ${isVisible ? "hidden" : "block"} md:block`}>
-                <div className="flex flex-col md:flex-row gap-10 md:gap-94 items-center justify-center px-30">
+                <div className="flex flex-col md:flex-row gap-10 md:gap-90 items-center justify-center px-30">
                     <section className="header-nav flex">
-                        <nav className="flex flex-col md:flex-row gap-10 md:gap-13 font-[IBM_Plex_Mono] 
+                        <nav className="flex flex-col md:flex-row gap-10 md:gap-20 font-[IBM_Plex_Mono] 
                         text-center text-sm tracking-[1%] text-gray-400">
-                            <a>Home</a>
-                            <a>Projects</a>
-                            <a>About Me</a>
-                            <a>Skills</a>
-                            <a>Contact Me</a>
+                            <a href="#projects">Projects</a>
+                            <a href="#about-me">About Me</a>
+                            <a href="#skills">Skills</a>
+                            <a href="#contact">Contact Me</a>
                         </nav>
                     </section>
                     <section className="header-socials flex gap-5">

@@ -4,7 +4,7 @@ import SkillsAdditional from "../components/SkillsAdditional"
 
 export default function Skills() {
     return(
-        <article className="flex flex-col px-10 py-10 gap-10">
+        <article className="flex flex-col px-10 py-10 gap-10" id="skills">
             <section className="flex justify-center">
                 <h1 className="font-[Raleway] text-4xl">Skills</h1>
             </section>
