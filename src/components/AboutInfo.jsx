@@ -19,10 +19,6 @@ export default function AboutInfo() {
                         <h4 className="w-1/3">Address</h4>
                         <h4>Sancaktepe, İstanbul</h4>
                     </div>
-                    <div className="email flex gap-15">
-                        <h4 className="w-1/3">E-mail</h4>
-                        <h4>kaanarslan.work@gmail.com</h4>
-                    </div>
                     <div className="school flex gap-15">
                         <h4 className="w-1/3">School</h4>
                         <div className="flex flex-col">
@@ -30,6 +26,10 @@ export default function AboutInfo() {
                             <h4 className="pb-0.5">Mechanical Engineering</h4>
                             <h4 className="">Master's Degree</h4>
                         </div>
+                    </div>
+                    <div className="language flex gap-15">
+                        <h4 className="w-1/3">Language</h4>
+                        <h4>English (Advanced)</h4>
                     </div>
                 </div>
             </section>
