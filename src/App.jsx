@@ -1,4 +1,5 @@
 import './App.css'
+import ScrollToTop from './components/ScrollToTop'
 import AboutMe from './sections/AboutMe'
 import Contact from './sections/Contact'
 import Hero from './sections/Hero'
@@ -14,6 +15,7 @@ function App() {
       <AboutMe />
       <Skills />
       <Contact />
+      <ScrollToTop />
     </>
   )
 }

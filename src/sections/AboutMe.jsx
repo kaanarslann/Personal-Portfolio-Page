@@ -1,4 +1,3 @@
-import profilephoto from "../assets/profilephoto.png";
 import AboutDetails from "../components/AboutDetails";
 import AboutInfo from "../components/AboutInfo";
 
