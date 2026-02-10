@@ -8,11 +8,20 @@ export default function Contact() {
             <section className="flex justify-center">
                 <h1 className="text-white font-[Raleway] text-4xl">Contact Me</h1>
             </section>
-            <section className="flex flex-col items-center gap-10">
-                <div className="flex justify-center items-center gap-2 border-2 border-gray-300 p-3 rounded hover:cursor-pointer"><FontAwesomeIcon icon={faEnvelope} size="lg" style={{color:"gray"}} /><h2 className="font-['IBM_Plex_Mono'] text-3xl text-gray-400 text-center">kaanarslan.work@gmail.com</h2></div>
-                <div className="flex justify-center gap-5 border rounded p-2 border-gray-300 hover:cursor-pointer">
-                    <FontAwesomeIcon icon={faLinkedin} size="2xl" style={{color:"gray"}}/>
-                    <FontAwesomeIcon icon={faGithub} size="2xl" style={{color:"gray"}}/>
+            <section className="flex items-center gap-10">
+                <div className="border-2 border-gray-300 p-3 rounded flex flex-col-reverse justify-center mx-auto">
+                    <div className="flex gap-2 items-center">
+                        <FontAwesomeIcon icon={faEnvelope} size="xl" style={{color:"gray"}} />
+                        <a href="mailto:kaanarslan.work@gmail.com" className="font-['IBM_Plex_Mono'] text-3xl text-gray-400 text-center hover:cursor-pointer">kaanarslan.work@gmail.com</a>
+                    </div>
+                    <div className="flex gap-2 items-center">
+                        <FontAwesomeIcon icon={faLinkedin} size="xl" style={{color:"#0077B5"}}/>
+                        <a href="https://linkedin.com/in/kaan-arslan-6a3b60138/" target="_blank" className="font-['IBM_Plex_Mono'] text-3xl text-gray-400 text-center hover:cursor-pointer">LinkedIn</a>
+                    </div>
+                    <div className="flex gap-2 items-center">
+                        <FontAwesomeIcon icon={faGithub} size="xl" style={{color:"gray"}}/>
+                        <a href="https://github.com/kaanarslann" target="_blank" className="font-['IBM_Plex_Mono'] text-3xl text-gray-400 text-center hover:cursor-pointer">GitHub</a>
+                    </div>
                 </div>
             </section>
         </article>
