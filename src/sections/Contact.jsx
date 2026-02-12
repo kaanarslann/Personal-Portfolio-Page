@@ -11,7 +11,7 @@ export default function Contact() {
             <section className="flex items-center gap-10">
                 <div className="border-2 border-gray-300 p-3 rounded flex flex-col-reverse justify-center mx-auto">
                     <div className="flex gap-2 items-center">
-                        <FontAwesomeIcon icon={faEnvelope} size="xl" style={{color:"gray"}} />
+                        <FontAwesomeIcon icon={faEnvelope} size="xl" style={{color:"#e33f22"}} />
                         <a href="mailto:kaanarslan.work@gmail.com" className="font-['IBM_Plex_Mono'] text-3xl text-gray-400 text-center hover:cursor-pointer">kaanarslan.work@gmail.com</a>
                     </div>
                     <div className="flex gap-2 items-center">

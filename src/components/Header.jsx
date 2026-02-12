@@ -43,8 +43,8 @@ export default function Header() {
                         </nav>
                     </section>
                     <section className="header-socials flex gap-5">
-                        <FontAwesomeIcon icon={faLinkedin} size="lg" style={{color:"gray"}}/>
-                        <FontAwesomeIcon icon={faGithub} size="lg" style={{color:"gray"}}/>
+                        <a href="https://linkedin.com/in/kaan-arslan-6a3b60138/" target="_blank"><FontAwesomeIcon icon={faLinkedin} size="lg" style={{color:"gray"}}/></a>
+                        <a href="https://github.com/kaanarslann" target="_blank"><FontAwesomeIcon icon={faGithub} size="lg" style={{color:"gray"}}/></a>
                     </section>
                 </div>
             </section>
