@@ -33,9 +33,11 @@ export default function ProjectCard({direction, techs, tagColor, title, descript
     return (
         <article className={`${direction} justify-center items-center gap-5 md:gap-20`}>
             <section className="flex flex-col px-20 md:px-0 gap-5 md:max-w-110">
-                <div className={`project-tags border ${tagColors[tagColor].border} 
-                ${tagColors[tagColor].bg} rounded-[60px] w-18 h-6 flex justify-center items-center`}>
-                    <h4 className={`font-['IBM_Plex_Mono'] ${tagColors[tagColor].text} font-bold text-xs`}>{techs}</h4>
+                <div className="flex gap-2">
+                    {Array.isArray(techs) && techs.map((tech) => (<div key={tech} className={`project-tags border ${tagColors[tagColor].border} 
+                ${tagColors[tagColor].bg} rounded-[60px] w-25 h-6 flex justify-center items-center`}>
+                    <h4 className={`font-['IBM_Plex_Mono'] ${tagColors[tagColor].text} font-bold text-xs text-center`}>{tech}</h4>
+                </div>))}
                 </div>
                 <h1 className="project-title font-[Raleway] text-2xl text-black">
                     {title}

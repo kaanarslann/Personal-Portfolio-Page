@@ -1,6 +1,6 @@
 export default function Button({size, color, href, children, ...props}) {
     
-    const base = "flex items-center justify-center text-center text-sm font-['IBM_Plex_Mono'] font-bold text-white border rounded drop-shadow-lg";
+    const base = "flex items-center justify-center text-center text-sm font-['IBM_Plex_Mono'] hover:cursor-pointer font-bold text-white border rounded drop-shadow-lg";
 
     const sizes = {
         hero: "w-36 h-10 md:w-70 md:h-15",

@@ -8,7 +8,6 @@ export default function ScrollToTop() {
 
     useEffect(() => {
         const toggleVisibility = () => {
-            console.log("scrollY:", window.scrollY)
             setVisible(window.scrollY > 300);
         };
 
@@ -24,10 +23,10 @@ export default function ScrollToTop() {
     };
     
     return(
-        <button onClick={scrollToTop} className={`fixed bottom-6 right-3 md:right-6 z-50 p-3 bg-[#1565C0] rounded-full h-16 shadow-lg shadow-blue-500 transition-all duration-300 transform
+        <button onClick={scrollToTop} className={`fixed bottom-6 right-3 md:right-6 z-50 p-3 bg-[#1565C0] 
+            rounded-full h-16 shadow-lg shadow-blue-500 transition-all duration-300 transform hover:cursor-pointer
         ${visible ? "opacity-100 translate-y-0" : "opacity-0 pointer-events-none translate-y-4"}`}>
             <FontAwesomeIcon icon={faCircleUp} size="2xl" style={{color:"white"}}/>
-            {console.log("visibility:", visible)}
         </button>
     )
 }
