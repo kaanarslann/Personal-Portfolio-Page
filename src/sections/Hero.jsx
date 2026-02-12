@@ -10,10 +10,12 @@ import React from "../assets/icons/react.png";
 import SpringBoot from "../assets/icons/springboot.png";
 import TailwindCSS from "../assets/icons/tailwindcss.png";
 import PostgreSQL from "../assets/icons/postgresql.png";
-
+import { useContext } from "react";
+import { OptionsContext } from "../context/OptionsContext";
 
 export default function Hero() {
 
+    const {language, darkMode, data} = useContext(OptionsContext);
 
     return(
         <main className="bg-black mx-auto px-10 md:px-20 md:h-screen">
@@ -26,10 +28,10 @@ export default function Hero() {
                         <h1 className="text-white font-[Raleway] font-extrabold text-5xl">Kaan Arslan</h1>
                         <p className="text-gray-400 font-['IBM_Plex_Mono'] 
                         text-sm leading-6 tracking-[1%] md:w-120">
-                            Hello, I'm Kaan. I have always been interested in the field of software and computer science. I am actively developing my skills to pursue a career as a Full Stack Developer.
+                            {data[language].heroSection.intro}
                         </p>
                         <Button size="hero" color="hero" href="#projects">
-                            <span>Learn More</span><FontAwesomeIcon icon={faAngleRight} className="relative top-px"/>
+                            <span>{data[language].heroSection.heroButton}</span><FontAwesomeIcon icon={faAngleRight} className="relative top-px"/>
                         </Button>
                     </article>
                     <figure className="hero-photo w-[45%] md:w-70 md:h-75">
@@ -38,7 +40,7 @@ export default function Hero() {
                 </section>
                 <section className="tech-stack flex flex-col mt-10 md:mt-15 gap-5 pb-15">
                     <div className="flex mx-auto">
-                        <h3 className="font-['IBM_Plex_Mono'] text-white text-sm">Tech Stack I Build With</h3>
+                        <h3 className="font-['IBM_Plex_Mono'] text-white text-sm">{data[language].heroSection.techStack}</h3>
                     </div>
                     <div className="tech-logos flex justify-center gap-5 md:gap-10">
                         <TechStack logo={JavaScript} title={"JavaScript"}/>
