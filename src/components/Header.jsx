@@ -1,11 +1,13 @@
-import { useState } from "react"
-
+import { useState, useContext } from "react"
+import { OptionsContext } from "../context/OptionsContext"
 import ThemeSlider from "./ThemeSlider"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons"
 import { faBars } from "@fortawesome/free-solid-svg-icons"
 
 export default function Header() {
+    
+    const {language, toggleLanguage, toggleDarkMode, darkMode, data} = useContext(OptionsContext);
     
     const [isVisible, setIsVisible] = useState(false);
     const toggleOptions = () => {
@@ -18,11 +20,11 @@ export default function Header() {
                 <div className="header-buttons flex gap-5">
                     <div className="theme flex gap-1 items-center">
                         <ThemeSlider />
-                        <span className="text-xs tracking-[1%] text-gray-400">Light Theme</span>
+                        <span className="text-xs tracking-[1%] text-gray-400">{data[language].headerSection.lightTheme}</span>
                     </div>
                     <div className="language flex gap-1 items-center">
                         <ThemeSlider />
-                        <span className="text-xs tracking-[1%] text-gray-400">English</span>    
+                        <span className="text-xs tracking-[1%] text-gray-400">{data[language].headerSection.english}</span>    
                     </div>
                 </div>
                 <div className="toggle-icon flex gap-5 justify-end md:hidden">
@@ -36,10 +38,9 @@ export default function Header() {
                     <section className="header-nav flex">
                         <nav className="flex flex-col md:flex-row gap-10 md:gap-20 font-[IBM_Plex_Mono] 
                         text-center text-sm tracking-[1%] text-gray-400">
-                            <a href="#projects">Projects</a>
-                            <a href="#about-me">About Me</a>
-                            <a href="#skills">Skills</a>
-                            <a href="#contact">Contact Me</a>
+                            {data[language].headerSection.navButtons.map((button, index) => (
+                                <a key={index} href={button.link}>{button.text}</a>
+                            ))}
                         </nav>
                     </section>
                     <section className="header-socials flex gap-5">
