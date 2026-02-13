@@ -12,7 +12,8 @@ export default function Button({size, color, href, children, ...props}) {
         orange: "bg-[#FFA217]",
         blue: "bg-[#000AFF]",
         green: "bg-[#2AB090]",
-        red: "bg-[#E33636]"
+        red: "bg-[#E33636]",
+        yellow: "bg-[#ebe30e]",
     }
     
     const className = `${base} ${sizes[size]} ${colors[color]}`;

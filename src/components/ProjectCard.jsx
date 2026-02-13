@@ -27,6 +27,11 @@ export default function ProjectCard({direction, techs, tagColor, title, descript
             bg: "bg-[#E33636]/20",
             border: "border-[#E33636]/20",
             text: "text-[#E33636]",
+        },
+        yellow: {
+            bg: "bg-[#ebe30e]/20",
+            border: "border-[#ebe30e]/20",
+            text: "text-[#ebe30e]",
         }
     }
 

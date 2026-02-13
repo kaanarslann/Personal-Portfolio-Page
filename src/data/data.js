@@ -32,38 +32,73 @@ const data = {
             heroButton: "Learn More",
             techStack: "Tech Stack I Build With",
         },
-        projectsSecction: {
+        projectsSection: {
             title: "Projects",
             intro: "I completed a six-month intensive full-stack development program, developing projects using modern front-end and back-end technologies. Here are some of the projects:",
             projects: [
                 {
+                    direction: "flex flex-col-reverse md:flex-row",
+                    tagColor: "orange",
                     techs: ["React", "Spring Boot", "PostgreSQL"],
                     title: "E-Commerce",
                     image: "",
+                    buttonType: {
+                        size: "project",
+                        color: "orange",
+                        href: "#"
+                    },
                     details: "A functioning e-commerce project. For global state management, Redux with Redux Thunk middleware was used to handle asynchronous data flow. Tackled full stack integration challenges like JWT authentication, CORS configuration, DTO/entity mapping and validation refactoring. Frontend deployed on Vercel, Backend deployed on Render.",
                 },
                 {
+                    direction: "flex flex-col-reverse md:flex-row-reverse",
+                    tagColor: "blue",
                     techs: ["React", "Context API", "TailwindCSS"],
                     title: "Personal Portfolio Page",
                     image: "",
+                    buttonType: {
+                        size: "project",
+                        color: "blue",
+                        href: "#"
+                    },
                     details: "A React + Vite project. It uses Context Api to share data between components. It features language and theme change options and stores user choices to Local Storage. Success and error notifications created using Toastify."
                 },
                 {
+                    direction: "flex flex-col-reverse md:flex-row",
+                    tagColor: "green",
                     techs: ["Java", "Spring Boot", "PostgreSQL"],
                     title: "Twitter Backend RestAPI",
                     image: "",
+                    buttonType: {
+                        size: "project",
+                        color: "green",
+                        href: "#"
+                    },
                     details: "A Spring Boot RestAPI project. It provides access to sources like Tweet, User, Comment via HTTP methods (GET, POST, PATCH, DELETE). It uses JPA/Hibernate to store users, tweets, comments in a relational database. It grants access to users via a token which is given to users after register and login processes.",
                 },
                 {
-                    techs: ["Java"],
+                    direction: "flex flex-col-reverse md:flex-row-reverse",
+                    tagColor: "red",
+                    techs: ["Java", "OOP", "Collections"],
                     title: "Library System",
                     image: "",
+                    buttonType: {
+                        size: "project",
+                        color: "red",
+                        href: "#"
+                    },
                     details: "A Java console application. It’s a library automation system, designed with OOP principles. It follows encapsulation, composition, inheritance, polymorphism rules. It uses Collections to store book, author, reader and librarian data.",
                 },
                 {
+                    direction: "flex flex-col-reverse md:flex-row",
+                    tagColor: "yellow",
                     techs: ["JavaScript", "React", "Axios"],
                     title: "Pizza SPA Project",
                     image: "",
+                    buttonType: {
+                        size: "project",
+                        color: "yellow",
+                        href: "#"
+                    },
                     details: "A React + Vite project. t uses React Router to navigate between components, Axios to post Order Form data and Cypress to test several success and fail scenarios.",
                 }
             ]
@@ -113,38 +148,73 @@ const data = {
             heroButton: "Daha Fazla",
             techStack: "Kullandığım Teknolojiler",
         },
-        projectsSecction: {
+        projectsSection: {
             title: "Projeler",
             intro: "Altı aylık yoğun bir full-stack geliltirme programını tamamladım ve modern front-end ve back-end teknolojileri kullanarak projeler geliştirdim. Projelerden bazıları:",
             projects: [
                 {
+                    direction: "flex flex-col-reverse md:flex-row",
+                    tagColor: "orange",
                     techs: ["React", "Spring Boot", "PostgreSQL"],
                     title: "E-Commerce",
                     image: "",
+                    buttonType: {
+                        size: "project",
+                        color: "orange",
+                        href: "#"
+                    },
                     details: "İşlevsel bir e-ticaret projesi. Global state yönetimi için, asenkron veri akışını yönetmek üzere Redux Thunk middleware ile Redux kullanıldı. JWT kimlik doğrulaması, CORS yapılandırması, DTO/entity eşlemesi ve doğrulaması gibi full stack entegrasyon zorlujlarının üstesinden gelindi. Front-end Vervel, back-end ise Render üzerinden deploy edildi.",
                 },
                 {
+                    direction: "flex flex-col-reverse md:flex-row-reverse",
+                    tagColor: "blue",
                     techs: ["React", "Context API", "TailwindCSS"],
                     title: "Kişisel Portföy Sayfası",
                     image: "",
+                    buttonType: {
+                        size: "project",
+                        color: "blue",
+                        href: "#"
+                    },
                     details: "Bir React + Vite projesi. Bileşenler arasında veri paylaşımı için Context API kullanılıyor. Dil ve tema değiştirme seçenekleri sunuyor ve kullanıcı tercihlerini Local Storage'a kaydediyor. Başarı ve hata bildirimlerini Toastify ile oluşturuyor."
                 },
                 {
+                    direction: "flex flex-col-reverse md:flex-row",
+                    tagColor: "green",
                     techs: ["Java", "Spring Boot", "PostgreSQL"],
                     title: "Twitter Backend RestAPI",
                     image: "",
+                    buttonType: {
+                        size: "project",
+                        color: "green",
+                        href: "#"
+                    },
                     details: "Bir Spring Boot projesi. HTTP metotları (GET, POST, PATCH, DELETE) aracılığıyla Tweet, User, Comment gibi kaynaklara erişim sağlıyor. Kullanıcıları, tweetleri, yorumları ilişkisel veri tabanında saklamak iin JPA/Hibernate kullanıyor. Kullanıcılara kayıt ve giriş sonrası verilen bir token aracılığıyla erişim izni veriyor.",
                 },
                 {
-                    techs: ["Java"],
+                    direction: "flex flex-col-reverse md:flex-row-reverse",
+                    tagColor: "red",
+                    techs: ["Java", "OOP", "Collections"],
                     title: "Kütüphane Sistemi",
                     image: "",
+                    buttonType: {
+                        size: "project",
+                        color: "red",
+                        href: "#"
+                    },
                     details: "Bir Java konsol uygulaması. Nesne yönelimli programlama prensipleriyle tasarlanmış bir kütüphane otomasyon sistemidir. Encapsulation, composition, inheritance ve polymorphism kurallarına uyar. Kitap, yazar, okuyucu ve kütüphaneci verilerini depolamak için Koleksiyonlar kullanılıyor.",
                 },
                 {
+                    direction: "flex flex-col-reverse md:flex-row",
+                    tagColor: "yellow",
                     techs: ["JavaScript", "React", "Axios"],
                     title: "Pizza SPA Projesi",
                     image: "",
+                    buttonType: {
+                        size: "project",
+                        color: "yellow",
+                        href: "#"
+                    },
                     details: "Bir React + Vite projesi. Bileşenler arasında dolaşmak için React Router, sipariş formu verilerini göndermek için Axios ve çeşitli başarı / başarısızlık senaryolarını test etmek için Cypress kullanılıyor.",
                 }
             ]
