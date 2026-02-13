@@ -1,12 +1,17 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons"
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons"
+import { useContext } from "react";
+import { OptionsContext } from "../context/OptionsContext";
 
 export default function Contact() {
+    
+    const {language, darkMode, data} = useContext(OptionsContext);
+    
     return(
         <article className="flex flex-col bg-black py-10 gap-10" id="contact">
             <section className="flex justify-center">
-                <h1 className="text-white font-[Raleway] text-4xl">Contact Me</h1>
+                <h1 className="text-white font-[Raleway] text-4xl">{data[language].contactSection.title}</h1>
             </section>
             <section className="flex items-center gap-10">
                 <div className="border-2 border-gray-300 p-3 rounded flex flex-col-reverse justify-center mx-auto">
