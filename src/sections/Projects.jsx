@@ -7,28 +7,6 @@ export default function Projects() {
     
     const {language, darkMode, data} = useContext(OptionsContext);
     
-    const prjButton1 = {
-        size: "project",
-        color: "orange",
-        href: "#"
-    }
-    const prjButton2 = {
-        size: "project",
-        color: "blue",
-        href: "#"
-    }
-    const prjButton3 = {
-        size: "project",
-        color: "green",
-        href: "#"
-    }
-    const prjButton4 = {
-        size: "project",
-        color: "red",
-        href: "#"
-    }
-    const projectP = "A functioning e-commerce project. For global state management, Redux with Redux Thunk middleware was used to handle asynchronous data flow. Tackled full stack integration challenges like JWT authentication, CORS configuration, DTO/entity mapping and validation refactoring. Frontend deployed on Vercel, Backend deployed on Render.";
-    
     return (
         <section className="projects flex flex-col justify-center mx-auto px-10 mt-10 gap-15 pb-20" id="projects">
             <div className="projects-top flex flex-col justify-center gap-5 items-center">

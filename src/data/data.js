@@ -106,10 +106,16 @@ const data = {
         aboutSection: {
             title: "About Me",
             intro: " After completing my master's degree, I took several courses and developed projects to broaden my skill set in the software field.",
-            university: "İstanbyl Aydın University",
+            infoTitle: "General Info",
+            birthday: "Date of Birth",
+            address: "Address",
+            school: "School",
+            university: "İstanbul Aydın University",
             program: "Mechanical Engineering",
             degree: "Master's Degree",
-            language: "English (Advanced)",
+            language: "Language",
+            languageEng: "English (Advanced)",
+            aboutTitle: "About Me",
             aboutMe: "As a result of my long-standing interest and curiosity in technology, I have decided to pursue a career in software development. After graduating from Istanbul University's Computer Programming program, I completed a six-month intensive full-stack development program, developing projects using modern front-end and back-end technologies. During this process, in addition to my technical knowledge, I also developed my rapid learning, responsibility-taking, and problem-solving skills."
         },
         skillsSection: {
@@ -220,12 +226,18 @@ const data = {
             ]
         },
         aboutSection: {
-            title: "About Me",
+            title: "Hakkımda",
             intro: "Yüksek lisansımı tamamladıktan sonra yazılım alanındaki becerilerimi genişletmek için çeşitli kurslara katıldım ve projeler geliştirdim.",
-            university: "İstanbyl Aydın Üniversitesi",
+            infoTitle: "Genel Bilgiler",
+            birthday: "Doğum Tarihi",
+            address: "Adres",
+            school: "Okul",
+            university: "İstanbul Aydın Üniversitesi",
             program: "Makine Mühendisliği",
             degree: "Yüksek Lisans",
-            language: "İngilizce (İleri)",
+            language: "Dil",
+            languageEng: "İngilizce (İleri)",
+            aboutTitle: "Hakkımda",
             aboutMe: "Teknolojiye duyduğum uzun soluklu ilgi ve merak sonucu kariyerimi yazılım geliştirme alanında sürdürme kararı aldım. İstanbul Üniversitesi Bilgisayar Programcılığı programından mezun olduktan sonra, altı aylık yoğun bir full-stack geliştirme programını tamamlayarak modern front-end ve back-end teknolojileriyle projeler geliştirdim. Bu süreçte teknik bilgilerin yanı sıra hızlı öğrenme, sorumluluk alma ve sorun çözme becerilerimi de geliştirdim."
         },
         skillsSection: {
