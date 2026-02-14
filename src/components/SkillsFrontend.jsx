@@ -7,7 +7,7 @@ export default function SkillsFrontend() {
             <div className="flex items-center gap-1"><FontAwesomeIcon icon={faCode} /><h2 className="font-[Raleway] text-2xl">Front-end</h2></div>
             <div className="skill-list">
                 <ul className="list-disc font-['IBM_Plex_Mono']">
-                    <li>JavaScript</li>
+                    <li >JavaScript</li>
                     <li>HTML</li>
                     <li>CSS</li>
                     <li>React.js</li>

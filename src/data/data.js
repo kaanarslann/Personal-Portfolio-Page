@@ -121,6 +121,7 @@ const data = {
         },
         skillsSection: {
             title: "Skills",
+            additional: ["Microsoft Office", "Debugging", "Deployment", "Problem Solving", "Teamwork"],
         },
         contactSection: {
             title: "Contact Me",
@@ -245,10 +246,43 @@ const data = {
         },
         skillsSection: {
             title: "Yetenekler",
+            additional: ["Microsoft Office", "Hata Ayıklama", "Dağıtım", "Problem Çözme", "Takım Çalışması"],
         },
         contactSection: {
             title: "İletişim",
         },
+    },
+    base: {
+        name: "Kaan Arslan",
+        techStack: [
+            {
+                text: "JavaScript",
+                logo: "",
+            },
+            {
+                text: "React.js",
+                logo: "",
+            },
+            {
+                text: "HTML5",
+                logo: "",
+            },
+            {
+                text: "TailwindCSS",
+                logo: "",
+            },
+            {
+                text: "Spring Boot",
+                logo: "",
+            },
+            {
+                text: "PorstgreSQL",
+                logo: "",
+            },
+        ],
+        address: "Sancaktepe, İstanbul",
+        frontEnd: ["JavaScript", "HTML", "CSS", "React.js", "React Redux", "Context API", "Cypress", "Axios", "TailwindCSS", "Toastify"],
+        backEnd: ["OOP", "Java", "Spring Boot", "C#", "PostgreSQL", "Microsoft SQL", "RestAPI", "Postman", "Maven", "Mockito"],
     }
 }
 
