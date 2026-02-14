@@ -6,8 +6,7 @@ const data = {
         headerSection: {
             lightTheme: "Light Theme",
             darkTheme: "Dark Theme",
-            english: "English",
-            turkish: "Türkçe",
+            language: "English",
             navButtons: [
                 {
                     text: "Projects",
@@ -34,6 +33,8 @@ const data = {
         },
         projectsSection: {
             title: "Projects",
+            projectView: "View Project",
+            projectGithub: "View Github",
             intro: "I completed a six-month intensive full-stack development program, developing projects using modern front-end and back-end technologies. Here are some of the projects:",
             projects: [
                 {
@@ -45,7 +46,7 @@ const data = {
                     buttonType: {
                         size: "project",
                         color: "orange",
-                        href: "#"
+                        href: "https://e-commerce-cyan-gamma.vercel.app/"
                     },
                     details: "A functioning e-commerce project. For global state management, Redux with Redux Thunk middleware was used to handle asynchronous data flow. Tackled full stack integration challenges like JWT authentication, CORS configuration, DTO/entity mapping and validation refactoring. Frontend deployed on Vercel, Backend deployed on Render.",
                 },
@@ -58,7 +59,7 @@ const data = {
                     buttonType: {
                         size: "project",
                         color: "blue",
-                        href: "#"
+                        href: "https://github.com/kaanarslann/Personal-Portfolio-Page"
                     },
                     details: "A React + Vite project. It uses Context Api to share data between components. It features language and theme change options and stores user choices to Local Storage. Success and error notifications created using Toastify."
                 },
@@ -71,7 +72,7 @@ const data = {
                     buttonType: {
                         size: "project",
                         color: "green",
-                        href: "#"
+                        href: "https://github.com/kaanarslann/Twitter-Backend"
                     },
                     details: "A Spring Boot RestAPI project. It provides access to sources like Tweet, User, Comment via HTTP methods (GET, POST, PATCH, DELETE). It uses JPA/Hibernate to store users, tweets, comments in a relational database. It grants access to users via a token which is given to users after register and login processes.",
                 },
@@ -84,7 +85,7 @@ const data = {
                     buttonType: {
                         size: "project",
                         color: "red",
-                        href: "#"
+                        href: "https://github.com/kaanarslann/Java-Library-OOP"
                     },
                     details: "A Java console application. It’s a library automation system, designed with OOP principles. It follows encapsulation, composition, inheritance, polymorphism rules. It uses Collections to store book, author, reader and librarian data.",
                 },
@@ -97,7 +98,7 @@ const data = {
                     buttonType: {
                         size: "project",
                         color: "yellow",
-                        href: "#"
+                        href: "https://fsweb-s8-challenge-pizza-alpha.vercel.app/"
                     },
                     details: "A React + Vite project. t uses React Router to navigate between components, Axios to post Order Form data and Cypress to test several success and fail scenarios.",
                 }
@@ -156,6 +157,8 @@ const data = {
         },
         projectsSection: {
             title: "Projeler",
+            projectView: "Projeye Git",
+            projectGithub: "GitHub'a Git",
             intro: "Altı aylık yoğun bir full-stack geliltirme programını tamamladım ve modern front-end ve back-end teknolojileri kullanarak projeler geliştirdim. Projelerden bazıları:",
             projects: [
                 {

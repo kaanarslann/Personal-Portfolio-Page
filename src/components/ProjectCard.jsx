@@ -1,8 +1,13 @@
 import Button from "./Button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
+import data from "../data/data";
+import { useContext } from "react";
+import { OptionsContext } from "../context/OptionsContext";
 
 export default function ProjectCard({direction, techs, tagColor, title, description, picture, buttonType}) {
+    
+    const {language, darkMode, data} = useContext(OptionsContext);
     
     const {size, color, href} = buttonType;
 
@@ -51,7 +56,7 @@ export default function ProjectCard({direction, techs, tagColor, title, descript
                     {description}
                 </p>
                 <Button size={size} color={color} href={href}>
-                    <span>View Project</span><FontAwesomeIcon icon={faAngleRight} className="relative top-px"/>
+                    <span>{href.includes("github") ? `${data[language].projectsSection.projectGithub}` : `${data[language].projectsSection.projectView}`}</span><FontAwesomeIcon icon={faAngleRight} className="relative top-px"/>
                 </Button>
                 <div className={`border-t-2 ${tagColors[tagColor].border} md:hidden`}></div>
             </section>

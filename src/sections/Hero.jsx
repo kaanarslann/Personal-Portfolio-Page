@@ -40,7 +40,7 @@ export default function Hero() {
                 </section>
                 <section className="tech-stack flex flex-col mt-10 md:mt-15 gap-5 pb-15">
                     <div className="flex mx-auto">
-                        <h3 className="font-['IBM_Plex_Mono'] text-white text-sm">{data[language].heroSection.techStack}</h3>
+                        <h3 className="font-['IBM_Plex_Mono'] dark:text-white text-black text-sm">{data[language].heroSection.techStack}</h3>
                     </div>
                     <div className="tech-logos flex justify-center gap-5 md:gap-10">
                         <TechStack logo={JavaScript} title={"JavaScript"}/>

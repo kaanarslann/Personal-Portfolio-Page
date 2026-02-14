@@ -20,7 +20,7 @@ export default function Button({size, color, href, children, ...props}) {
     
     if (href) {
         return (
-            <a href={href} className={className} {...props}>
+            <a href={href} target="_blank" className={className} {...props}>
                 {children}
             </a>
         );

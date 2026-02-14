@@ -1,8 +1,8 @@
-export default function ThemeSlider() {
+export default function ThemeSlider({toggleFunc}) {
     return (
         <> 
             <label class="inline-flex items-center cursor-pointer">
-            <input type="checkbox" class="sr-only peer" />
+            <input type="checkbox" class="sr-only peer" onChange={toggleFunc} />
             <div
                 className="relative w-8 h-4
                     bg-gray-300

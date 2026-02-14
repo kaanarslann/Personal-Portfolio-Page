@@ -20,11 +20,11 @@ export default function Header() {
                 <div className="header-buttons flex gap-5">
                     <div className="theme flex gap-1 items-center">
                         <ThemeSlider />
-                        <span className="text-xs tracking-[1%] text-gray-400">{data[language].headerSection.lightTheme}</span>
+                        <span className="text-xs tracking-[1%] text-gray-400">{!darkMode ? data[language].headerSection.darkTheme : data[language].headerSection.lightTheme}</span>
                     </div>
                     <div className="language flex gap-1 items-center">
-                        <ThemeSlider />
-                        <span className="text-xs tracking-[1%] text-gray-400">{data[language].headerSection.english}</span>    
+                        <ThemeSlider toggleFunc={toggleLanguage} />
+                        <span className="text-xs tracking-[1%] text-gray-400">{data[language].headerSection.language}</span>    
                     </div>
                 </div>
                 <div className="toggle-icon flex gap-5 justify-end md:hidden">
