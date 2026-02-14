@@ -1,4 +1,12 @@
-
+import HTML5 from "../assets/icons/html5.png";
+import JavaScript from "../assets/icons/javascript.png";
+import React from "../assets/icons/react.png";
+import SpringBoot from "../assets/icons/springboot.png";
+import TailwindCSS from "../assets/icons/tailwindcss.png";
+import PostgreSQL from "../assets/icons/postgresql.png";
+import ECommerce from "../assets/projectThumbnails/ecommerce.png"
+import GithubPrj from "../assets/projectThumbnails/github.png"
+import Pizza from "../assets/projectThumbnails/pizza.png"
 
 
 const data = {
@@ -42,7 +50,7 @@ const data = {
                     tagColor: "orange",
                     techs: ["React", "Spring Boot", "PostgreSQL"],
                     title: "E-Commerce",
-                    image: "",
+                    image: ECommerce,
                     buttonType: {
                         size: "project",
                         color: "orange",
@@ -55,7 +63,7 @@ const data = {
                     tagColor: "blue",
                     techs: ["React", "Context API", "TailwindCSS"],
                     title: "Personal Portfolio Page",
-                    image: "",
+                    image: GithubPrj,
                     buttonType: {
                         size: "project",
                         color: "blue",
@@ -68,7 +76,7 @@ const data = {
                     tagColor: "green",
                     techs: ["Java", "Spring Boot", "PostgreSQL"],
                     title: "Twitter Backend RestAPI",
-                    image: "",
+                    image: GithubPrj,
                     buttonType: {
                         size: "project",
                         color: "green",
@@ -81,7 +89,7 @@ const data = {
                     tagColor: "red",
                     techs: ["Java", "OOP", "Collections"],
                     title: "Library System",
-                    image: "",
+                    image: GithubPrj,
                     buttonType: {
                         size: "project",
                         color: "red",
@@ -94,7 +102,7 @@ const data = {
                     tagColor: "yellow",
                     techs: ["JavaScript", "React", "Axios"],
                     title: "Pizza SPA Project",
-                    image: "",
+                    image: Pizza,
                     buttonType: {
                         size: "project",
                         color: "yellow",
@@ -109,6 +117,7 @@ const data = {
             intro: " After completing my master's degree, I took several courses and developed projects to broaden my skill set in the software field.",
             infoTitle: "General Info",
             birthday: "Date of Birth",
+            date: "14 September 1992",
             address: "Address",
             school: "School",
             university: "İstanbul Aydın University",
@@ -126,6 +135,7 @@ const data = {
         contactSection: {
             title: "Contact Me",
         },
+        notification: "Dil Türkçe'ye ayarlandı!",
     },
     tr: {
         headerSection: {
@@ -234,6 +244,7 @@ const data = {
             intro: "Yüksek lisansımı tamamladıktan sonra yazılım alanındaki becerilerimi genişletmek için çeşitli kurslara katıldım ve projeler geliştirdim.",
             infoTitle: "Genel Bilgiler",
             birthday: "Doğum Tarihi",
+            date: "14 Eylül 1992",
             address: "Adres",
             school: "Okul",
             university: "İstanbul Aydın Üniversitesi",
@@ -251,33 +262,34 @@ const data = {
         contactSection: {
             title: "İletişim",
         },
+        notification: "Language is set to English!",
     },
     base: {
         name: "Kaan Arslan",
         techStack: [
             {
                 text: "JavaScript",
-                logo: "",
+                logo: JavaScript,
             },
             {
                 text: "React.js",
-                logo: "",
+                logo: React,
             },
             {
                 text: "HTML5",
-                logo: "",
+                logo: HTML5,
             },
             {
                 text: "TailwindCSS",
-                logo: "",
+                logo: TailwindCSS,
             },
             {
                 text: "Spring Boot",
-                logo: "",
+                logo: SpringBoot,
             },
             {
                 text: "PorstgreSQL",
-                logo: "",
+                logo: PostgreSQL,
             },
         ],
         address: "Sancaktepe, İstanbul",

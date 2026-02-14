@@ -7,7 +7,7 @@ import { faBars } from "@fortawesome/free-solid-svg-icons"
 
 export default function Header() {
     
-    const {language, toggleLanguage, toggleDarkMode, darkMode, data} = useContext(OptionsContext);
+    const {language, toggleLanguage, data} = useContext(OptionsContext);
     
     const [isVisible, setIsVisible] = useState(false);
     const toggleOptions = () => {
@@ -17,11 +17,7 @@ export default function Header() {
     return (
         <header className="flex flex-col py-2 px-10 md:pb-5 bg-[#1B1B1B] gap-5">
             <section className="header-top flex justify-between md:justify-end">
-                <div className="header-buttons flex gap-5">
-                    <div className="theme flex gap-1 items-center">
-                        <ThemeSlider />
-                        <span className="text-xs tracking-[1%] text-gray-400">{!darkMode ? data[language].headerSection.darkTheme : data[language].headerSection.lightTheme}</span>
-                    </div>
+                <div className="header-buttons">
                     <div className="language flex gap-1 items-center">
                         <ThemeSlider toggleFunc={toggleLanguage} />
                         <span className="text-xs tracking-[1%] text-gray-400">{data[language].headerSection.language}</span>    

@@ -4,12 +4,12 @@ import { OptionsContext } from "../context/OptionsContext";
 
 export default function AboutInfo() {
     
-    const {language, darkMode, data} = useContext(OptionsContext);
+    const {language, data} = useContext(OptionsContext);
     
     return (
         <section className="about-me-info flex flex-col-reverse md:flex-row items-center md:mx-auto gap-10 md:gap-66 md:max-w-6xl">
             <section className="about-me-text font-['IBM_Plex_Mono'] text-white flex flex-col gap-5">
-                <h2 className="name font-[Raleway] text-4xl">Kaan Arslan</h2>
+                <h2 className="name font-[Raleway] text-4xl">{data.base.name}</h2>
                 <p className="about font-[Raleway] text-lg md:max-w-140">
                     {data[language].aboutSection.intro}
                 </p>
@@ -17,11 +17,11 @@ export default function AboutInfo() {
                     <h3 className="info-title font-[Raleway] text-2xl">{data[language].aboutSection.infoTitle}</h3>
                     <div className="date-of-birth flex gap-15">
                         <h4 className="w-1/3">{data[language].aboutSection.birthday}</h4>
-                        <h4>14 September 1992</h4>
+                        <h4>{data[language].aboutSection.date}</h4>
                     </div>
                     <div className="address flex gap-15">
                         <h4 className="w-1/3">{data[language].aboutSection.address}</h4>
-                        <h4>Sancaktepe, İstanbul</h4>
+                        <h4>{data.base.address}</h4>
                     </div>
                     <div className="school flex gap-15">
                         <h4 className="w-1/3">{data[language].aboutSection.school}</h4>

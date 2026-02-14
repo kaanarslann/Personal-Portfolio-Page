@@ -5,7 +5,7 @@ import { OptionsContext } from "../context/OptionsContext";
 
 export default function AboutMe() {
     
-    const {language, darkMode, data} = useContext(OptionsContext);
+    const {language, data} = useContext(OptionsContext);
 
     return (
         <article className="about-me bg-black mx-auto px-10 md:px-20 pt-10 flex flex-col gap-15" id="about-me">

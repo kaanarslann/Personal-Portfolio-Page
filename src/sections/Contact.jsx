@@ -6,7 +6,7 @@ import { OptionsContext } from "../context/OptionsContext";
 
 export default function Contact() {
     
-    const {language, darkMode, data} = useContext(OptionsContext);
+    const {language, data} = useContext(OptionsContext);
     
     return(
         <article className="flex flex-col bg-black py-10 gap-10" id="contact">

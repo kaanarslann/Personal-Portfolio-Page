@@ -7,7 +7,7 @@ import { OptionsContext } from "../context/OptionsContext";
 
 export default function ProjectCard({direction, techs, tagColor, title, description, picture, buttonType}) {
     
-    const {language, darkMode, data} = useContext(OptionsContext);
+    const {language, data} = useContext(OptionsContext);
     
     const {size, color, href} = buttonType;
 
@@ -61,7 +61,7 @@ export default function ProjectCard({direction, techs, tagColor, title, descript
                 <div className={`border-t-2 ${tagColors[tagColor].border} md:hidden`}></div>
             </section>
             <figure className="md:max-w-140">
-                <img className="project-picture w-111 h-75 rounded object-contain" src={picture}/>
+                <img className="project-picture w-111 h-75 object-cover rounded-lg" src={picture}/>
             </figure>
         </article>
     )

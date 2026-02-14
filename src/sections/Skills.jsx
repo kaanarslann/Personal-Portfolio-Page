@@ -6,7 +6,7 @@ import { OptionsContext } from "../context/OptionsContext";
 
 export default function Skills() {
     
-    const {language, darkMode, data} = useContext(OptionsContext);
+    const {language, data} = useContext(OptionsContext);
     
     return(
         <article className="flex flex-col px-10 py-10 gap-10" id="skills">

@@ -4,18 +4,12 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
 import Button from "../components/Button";
 import TechStack from "../components/TechStack";
-import HTML5 from "../assets/icons/html5.png";
-import JavaScript from "../assets/icons/javascript.png";
-import React from "../assets/icons/react.png";
-import SpringBoot from "../assets/icons/springboot.png";
-import TailwindCSS from "../assets/icons/tailwindcss.png";
-import PostgreSQL from "../assets/icons/postgresql.png";
 import { useContext } from "react";
 import { OptionsContext } from "../context/OptionsContext";
 
 export default function Hero() {
 
-    const {language, darkMode, data} = useContext(OptionsContext);
+    const {language, data} = useContext(OptionsContext);
 
     return(
         <main className="bg-black mx-auto px-10 md:px-20 md:h-screen">
@@ -25,7 +19,7 @@ export default function Hero() {
             <section className="flex flex-col">
                 <section className="hero flex items-center gap-5 md:gap-80 justify-center">
                     <article className="hero-info flex flex-col w-[55%] gap-5 md:gap-7 md:w-88">
-                        <h1 className="text-white font-[Raleway] font-extrabold text-5xl">Kaan Arslan</h1>
+                        <h1 className="text-white font-[Raleway] font-extrabold text-5xl">{data.base.name}</h1>
                         <p className="text-gray-400 font-['IBM_Plex_Mono'] 
                         text-sm leading-6 tracking-[1%] md:w-120">
                             {data[language].heroSection.intro}
@@ -43,12 +37,9 @@ export default function Hero() {
                         <h3 className="font-['IBM_Plex_Mono'] dark:text-white text-black text-sm">{data[language].heroSection.techStack}</h3>
                     </div>
                     <div className="tech-logos flex justify-center gap-5 md:gap-10">
-                        <TechStack logo={JavaScript} title={"JavaScript"}/>
-                        <TechStack logo={React} title={"React.js"}/>
-                        <TechStack logo={HTML5} title={"HTML5"}/>
-                        <TechStack logo={TailwindCSS} title={"TailwindCSS"}/>
-                        <TechStack logo={SpringBoot} title={"Spring Boot"}/>
-                        <TechStack logo={PostgreSQL} title={"PostgreSQL"}/>
+                        {data.base.techStack.map((tech, index) => (
+                            <TechStack key={index} logo={tech.logo} title={tech.text}/>
+                        ))}
                     </div>
                 </section>
             </section>

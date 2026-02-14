@@ -5,7 +5,7 @@ import { OptionsContext } from "../context/OptionsContext";
 
 export default function Projects() {
     
-    const {language, darkMode, data} = useContext(OptionsContext);
+    const {language, data} = useContext(OptionsContext);
     
     return (
         <section className="projects flex flex-col justify-center mx-auto px-10 pt-10 gap-15 pb-20" id="projects">
@@ -17,7 +17,7 @@ export default function Projects() {
             </div>
             <div className="projects-details flex flex-col gap-10">
                 {data[language].projectsSection.projects.map((project, index) => (
-                    <ProjectCard index={index} direction={project.direction} techs={project.techs} tagColor={project.tagColor} title={project.title} description={project.details} picture={prjPicture} buttonType={project.buttonType}/>
+                    <ProjectCard key={index} direction={project.direction} techs={project.techs} tagColor={project.tagColor} title={project.title} description={project.details} picture={project.image} buttonType={project.buttonType}/>
                 ))}
             </div>
         </section>
