@@ -13,7 +13,7 @@ export default function Skills() {
             <section className="flex justify-center">
                 <h1 className="font-[Raleway] text-4xl">{data[language].skillsSection.title}</h1>
             </section>
-            <div className="skills flex justify-between md:justify-center md:gap-90">
+            <div className="skills flex flex-col md:flex-row gap-10 justify-between md:justify-center md:gap-90">
                 <SkillsFrontend />
                 <SkillsBackend />
                 <SkillsAdditional />

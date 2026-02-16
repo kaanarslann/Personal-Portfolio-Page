@@ -17,16 +17,19 @@ export default function Hero() {
                 <Header />
             </section>
             <section className="flex flex-col">
-                <section className="hero flex items-center gap-5 md:gap-80 justify-center">
-                    <article className="hero-info flex flex-col w-[55%] gap-5 md:gap-7 md:w-88">
-                        <h1 className="text-white font-[Raleway] font-extrabold text-5xl">{data.base.name}</h1>
+                <section className="hero flex flex-col-reverse md:flex-row items-center gap-5 md:gap-80 justify-center">
+                    <article className="hero-info flex flex-col gap-5 md:gap-7 md:w-88">
+                        <h1 className="text-white font-[Raleway] font-extrabold text-5xl text-center md:text-start">{data.base.name}</h1>
                         <p className="text-gray-400 font-['IBM_Plex_Mono'] 
-                        text-sm leading-6 tracking-[1%] md:w-120">
+                        text-sm leading-6 tracking-[1%] md:w-120 text-center md:text-start">
                             {data[language].heroSection.intro}
                         </p>
-                        <Button size="hero" color="hero" href="#projects">
-                            <span>{data[language].heroSection.heroButton}</span><FontAwesomeIcon icon={faAngleRight} className="relative top-px"/>
-                        </Button>
+                        <div className="flex justify-center">
+                            <Button size="hero" color="hero" href="#projects">
+                                <span>{data[language].heroSection.heroButton}</span><FontAwesomeIcon icon={faAngleRight} className="relative top-px"/>
+                            </Button>
+                        </div>
+                        
                     </article>
                     <figure className="hero-photo w-[45%] md:w-70 md:h-75">
                         <img src={profile}/>
@@ -34,9 +37,9 @@ export default function Hero() {
                 </section>
                 <section className="tech-stack flex flex-col mt-10 md:mt-15 gap-5 pb-15">
                     <div className="flex mx-auto">
-                        <h3 className="font-['IBM_Plex_Mono'] dark:text-white text-black text-sm">{data[language].heroSection.techStack}</h3>
+                        <h3 className="font-['IBM_Plex_Mono'] text-white text-sm">{data[language].heroSection.techStack}</h3>
                     </div>
-                    <div className="tech-logos flex justify-center gap-5 md:gap-10">
+                    <div className="tech-logos flex flex-col md:flex-row items-center justify-center gap-5 md:gap-10">
                         {data.base.techStack.map((tech, index) => (
                             <TechStack key={index} logo={tech.logo} title={tech.text}/>
                         ))}

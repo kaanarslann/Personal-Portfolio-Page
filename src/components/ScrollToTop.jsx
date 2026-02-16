@@ -23,10 +23,10 @@ export default function ScrollToTop() {
     };
     
     return(
-        <button onClick={scrollToTop} className={`fixed bottom-6 right-3 md:right-6 z-50 p-3 bg-[#1565C0] 
-            rounded-full h-16 shadow-lg shadow-blue-500 transition-all duration-300 transform hover:cursor-pointer
+        <button onClick={scrollToTop} className={`fixed bottom-6 right-13 md:right-6 z-50 p-2 md:p-3 bg-[#1565C0] flex items-center justify-center 
+            rounded-full h-10 w-10 md:h-16 md:w-16 shadow-md md:shadow-lg shadow-blue-500 transition-all duration-300 transform hover:cursor-pointer
         ${visible ? "opacity-100 translate-y-0" : "opacity-0 pointer-events-none translate-y-4"}`}>
-            <FontAwesomeIcon icon={faCircleUp} size="2xl" style={{color:"white"}}/>
+            <FontAwesomeIcon icon={faCircleUp} className="text-xl md:text-3xl text-white"/>
         </button>
     )
 }

@@ -16,15 +16,15 @@ export default function AboutInfo() {
                 <div className="info flex flex-col gap-5">
                     <h3 className="info-title font-[Raleway] text-2xl">{data[language].aboutSection.infoTitle}</h3>
                     <div className="date-of-birth flex gap-15">
-                        <h4 className="w-1/3">{data[language].aboutSection.birthday}</h4>
+                        <h4 className="w-1/4 md:w-1/3">{data[language].aboutSection.birthday}</h4>
                         <h4>{data[language].aboutSection.date}</h4>
                     </div>
                     <div className="address flex gap-15">
-                        <h4 className="w-1/3">{data[language].aboutSection.address}</h4>
+                        <h4 className="w-1/4 md:w-1/3">{data[language].aboutSection.address}</h4>
                         <h4>{data.base.address}</h4>
                     </div>
-                    <div className="school flex gap-15">
-                        <h4 className="w-1/3">{data[language].aboutSection.school}</h4>
+                    <div className="school flex gap-20 md:gap-15">
+                        <h4 className="w-1/4 md:w-1/3">{data[language].aboutSection.school}</h4>
                         <div className="flex flex-col">
                             <h4 className="pb-2">{data[language].aboutSection.university}</h4>
                             <h4 className="pb-0.5">{data[language].aboutSection.program}</h4>
@@ -32,7 +32,7 @@ export default function AboutInfo() {
                         </div>
                     </div>
                     <div className="language flex gap-15">
-                        <h4 className="w-1/3">{data[language].aboutSection.language}</h4>
+                        <h4 className="w-1/4 md:w-1/3">{data[language].aboutSection.language}</h4>
                         <h4>{data[language].aboutSection.languageEng}</h4>
                     </div>
                 </div>
