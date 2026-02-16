@@ -37,7 +37,7 @@ const data = {
         },
         heroSection: {
             intro: "Hello, I'm Kaan. I have always been interested in the field of software and computer science. I am actively developing my skills to pursue a career as a Full Stack Developer.",
-            heroButton: "Learn More",
+            heroButton: "View Projects",
             techStack: "Tech Stack I Build With",
         },
         projectsSection: {
@@ -165,7 +165,7 @@ const data = {
         },
         heroSection: {
             intro: "Merhaba, ben Kaan. Yazılım ve bilgisayar bilimleri alanına her zaman ilgi duydum. Full Stack Developer olarak bir kariyer sahibi olmak için aktif olarak yeteneklerimi geliştiriyorum. ",
-            heroButton: "Daha Fazla",
+            heroButton: "Projeleri Gör",
             techStack: "Kullandığım Teknolojiler",
         },
         projectsSection: {

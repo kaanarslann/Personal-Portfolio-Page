@@ -1,4 +1,4 @@
-export default function Button({size, color, href, children, ...props}) {
+export default function Button({size, color, href, redirect, children, ...props}) {
     
     const base = "flex items-center justify-center text-center text-sm font-['IBM_Plex_Mono'] hover:cursor-pointer font-bold text-white border rounded drop-shadow-lg";
 
@@ -27,8 +27,8 @@ export default function Button({size, color, href, children, ...props}) {
     }
     
     return (
-        <button className={className} {...props}>
+        <a href={redirect} className={className} {...props}>
             {children}
-        </button>
+        </a>
     );
 }

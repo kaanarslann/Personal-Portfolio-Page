@@ -24,8 +24,8 @@ export default function Hero() {
                         text-sm leading-6 tracking-[1%] md:w-120 text-center md:text-start">
                             {data[language].heroSection.intro}
                         </p>
-                        <div className="flex justify-center">
-                            <Button size="hero" color="hero" href="#projects">
+                        <div className="flex justify-center md:justify-start">
+                            <Button size="hero" color="hero" redirect="#projects">
                                 <span>{data[language].heroSection.heroButton}</span><FontAwesomeIcon icon={faAngleRight} className="relative top-px"/>
                             </Button>
                         </div>
