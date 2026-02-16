@@ -1,5 +1,5 @@
 import Header from "../components/Header";
-import profile from "../assets/profilePhotos/profile.png";
+import profile from "../assets/profilePhotos/profile1.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
 import Button from "../components/Button";
