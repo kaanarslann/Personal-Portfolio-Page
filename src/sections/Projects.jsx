@@ -1,5 +1,4 @@
 import ProjectCard from "../components/ProjectCard";
-import prjPicture from "../assets/prjPicture.png";
 import { useContext } from "react";
 import { OptionsContext } from "../context/OptionsContext";
 

@@ -1,5 +1,5 @@
 import Header from "../components/Header";
-import profilephoto from "../assets/profilephoto.png";
+import profile from "../assets/profilePhotos/profile.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
 import Button from "../components/Button";
@@ -29,7 +29,7 @@ export default function Hero() {
                         </Button>
                     </article>
                     <figure className="hero-photo w-[45%] md:w-70 md:h-75">
-                        <img src={profilephoto}/>
+                        <img src={profile}/>
                     </figure>
                 </section>
                 <section className="tech-stack flex flex-col mt-10 md:mt-15 gap-5 pb-15">

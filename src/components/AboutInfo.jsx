@@ -1,4 +1,4 @@
-import profilephoto from "../assets/profilephoto.png";
+import profileAbout from "../assets/profilePhotos/profile2.JPG";
 import { useContext } from "react";
 import { OptionsContext } from "../context/OptionsContext";
 
@@ -7,7 +7,7 @@ export default function AboutInfo() {
     const {language, data} = useContext(OptionsContext);
     
     return (
-        <section className="about-me-info flex flex-col-reverse md:flex-row items-center md:mx-auto gap-10 md:gap-66 md:max-w-6xl">
+        <section className="about-me-info flex flex-col-reverse md:flex-row items-center md:mx-auto gap-10 md:gap-57 md:max-w-6xl">
             <section className="about-me-text font-['IBM_Plex_Mono'] text-white flex flex-col gap-5">
                 <h2 className="name font-[Raleway] text-4xl">{data.base.name}</h2>
                 <p className="about font-[Raleway] text-lg md:max-w-140">
@@ -38,7 +38,7 @@ export default function AboutInfo() {
                 </div>
             </section>
             <figure className="about-me-photo">
-                <img src={profilephoto} className="w-80 object-contain"/>
+                <img src={profileAbout} className="w-90 object-contain rounded-lg"/>
             </figure>
         </section>
     )

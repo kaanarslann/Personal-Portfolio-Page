@@ -29,7 +29,7 @@ export default function Header() {
                     </button>
                 </div>
             </section>
-            <section className={`toggle-header transition-all duration-300 ${isVisible ? "hidden" : "block"} md:block`}>
+            <section className={`toggle-header transition-all duration-300 transform ${isVisible ? "block" : "hidden"} md:block`}>
                 <div className="flex flex-col md:flex-row gap-10 md:gap-90 items-center justify-center px-30">
                     <section className="header-nav flex">
                         <nav className="flex flex-col md:flex-row gap-10 md:gap-20 font-[IBM_Plex_Mono] 

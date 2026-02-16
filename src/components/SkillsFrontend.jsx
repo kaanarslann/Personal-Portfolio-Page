@@ -10,7 +10,7 @@ export default function SkillsFrontend() {
     
     return (
         <section className="skills-frontend flex flex-col gap-5 items-center">
-            <div className="flex items-center gap-1"><FontAwesomeIcon icon={faCode} /><h2 className="font-[Raleway] text-2xl">Front-end</h2></div>
+            <div className="flex items-center gap-1"><FontAwesomeIcon icon={faCode} /><h2 className="font-[Raleway] text-2xl">{data.base.frontEndTitle}</h2></div>
             <div className="skill-list flex flex-col gap-0.5">
                 {data.base.frontEnd.map((skill, index) => (
                     <SkillCard key={index} skill={skill}/>

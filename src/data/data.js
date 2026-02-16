@@ -7,6 +7,7 @@ import PostgreSQL from "../assets/icons/postgresql.png";
 import ECommerce from "../assets/projectThumbnails/ecommerce.png"
 import GithubPrj from "../assets/projectThumbnails/github.png"
 import Pizza from "../assets/projectThumbnails/pizza.png"
+import Portfolio from "../assets/projectThumbnails/portfolio.png"
 
 
 const data = {
@@ -63,7 +64,7 @@ const data = {
                     tagColor: "blue",
                     techs: ["React", "Context API", "TailwindCSS"],
                     title: "Personal Portfolio Page",
-                    image: GithubPrj,
+                    image: Portfolio,
                     buttonType: {
                         size: "project",
                         color: "blue",
@@ -130,6 +131,7 @@ const data = {
         },
         skillsSection: {
             title: "Skills",
+            additionalTitle: "Additional",
             additional: ["Microsoft Office", "Debugging", "Deployment", "Problem Solving", "Teamwork"],
         },
         contactSection: {
@@ -176,12 +178,12 @@ const data = {
                     direction: "flex flex-col-reverse md:flex-row",
                     tagColor: "orange",
                     techs: ["React", "Spring Boot", "PostgreSQL"],
-                    title: "E-Commerce",
-                    image: "",
+                    title: "E-Ticaret",
+                    image: ECommerce,
                     buttonType: {
                         size: "project",
                         color: "orange",
-                        href: "#"
+                        href: "https://e-commerce-cyan-gamma.vercel.app/"
                     },
                     details: "İşlevsel bir e-ticaret projesi. Global state yönetimi için, asenkron veri akışını yönetmek üzere Redux Thunk middleware ile Redux kullanıldı. JWT kimlik doğrulaması, CORS yapılandırması, DTO/entity eşlemesi ve doğrulaması gibi full stack entegrasyon zorlujlarının üstesinden gelindi. Front-end Vervel, back-end ise Render üzerinden deploy edildi.",
                 },
@@ -190,11 +192,11 @@ const data = {
                     tagColor: "blue",
                     techs: ["React", "Context API", "TailwindCSS"],
                     title: "Kişisel Portföy Sayfası",
-                    image: "",
+                    image: Portfolio,
                     buttonType: {
                         size: "project",
                         color: "blue",
-                        href: "#"
+                        href: "https://github.com/kaanarslann/Personal-Portfolio-Page"
                     },
                     details: "Bir React + Vite projesi. Bileşenler arasında veri paylaşımı için Context API kullanılıyor. Dil ve tema değiştirme seçenekleri sunuyor ve kullanıcı tercihlerini Local Storage'a kaydediyor. Başarı ve hata bildirimlerini Toastify ile oluşturuyor."
                 },
@@ -203,11 +205,11 @@ const data = {
                     tagColor: "green",
                     techs: ["Java", "Spring Boot", "PostgreSQL"],
                     title: "Twitter Backend RestAPI",
-                    image: "",
+                    image: GithubPrj,
                     buttonType: {
                         size: "project",
                         color: "green",
-                        href: "#"
+                        href: "https://github.com/kaanarslann/Twitter-Backend"
                     },
                     details: "Bir Spring Boot projesi. HTTP metotları (GET, POST, PATCH, DELETE) aracılığıyla Tweet, User, Comment gibi kaynaklara erişim sağlıyor. Kullanıcıları, tweetleri, yorumları ilişkisel veri tabanında saklamak iin JPA/Hibernate kullanıyor. Kullanıcılara kayıt ve giriş sonrası verilen bir token aracılığıyla erişim izni veriyor.",
                 },
@@ -216,11 +218,11 @@ const data = {
                     tagColor: "red",
                     techs: ["Java", "OOP", "Collections"],
                     title: "Kütüphane Sistemi",
-                    image: "",
+                    image: GithubPrj,
                     buttonType: {
                         size: "project",
                         color: "red",
-                        href: "#"
+                        href: "https://github.com/kaanarslann/Java-Library-OOP"
                     },
                     details: "Bir Java konsol uygulaması. Nesne yönelimli programlama prensipleriyle tasarlanmış bir kütüphane otomasyon sistemidir. Encapsulation, composition, inheritance ve polymorphism kurallarına uyar. Kitap, yazar, okuyucu ve kütüphaneci verilerini depolamak için Koleksiyonlar kullanılıyor.",
                 },
@@ -229,11 +231,11 @@ const data = {
                     tagColor: "yellow",
                     techs: ["JavaScript", "React", "Axios"],
                     title: "Pizza SPA Projesi",
-                    image: "",
+                    image: Pizza,
                     buttonType: {
                         size: "project",
                         color: "yellow",
-                        href: "#"
+                        href: "https://fsweb-s8-challenge-pizza-alpha.vercel.app/"
                     },
                     details: "Bir React + Vite projesi. Bileşenler arasında dolaşmak için React Router, sipariş formu verilerini göndermek için Axios ve çeşitli başarı / başarısızlık senaryolarını test etmek için Cypress kullanılıyor.",
                 }
@@ -257,6 +259,7 @@ const data = {
         },
         skillsSection: {
             title: "Yetenekler",
+            additionalTitle: "Diğer",
             additional: ["Microsoft Office", "Hata Ayıklama", "Dağıtım", "Problem Çözme", "Takım Çalışması"],
         },
         contactSection: {
@@ -292,6 +295,8 @@ const data = {
                 logo: PostgreSQL,
             },
         ],
+        frontEndTitle: "Front-end",
+        backEndTitle: "Back-end",
         address: "Sancaktepe, İstanbul",
         frontEnd: ["JavaScript", "HTML", "CSS", "React.js", "React Redux", "Context API", "Cypress", "Axios", "TailwindCSS", "Toastify"],
         backEnd: ["OOP", "Java", "Spring Boot", "C#", "PostgreSQL", "Microsoft SQL", "RestAPI", "Postman", "Maven", "Mockito"],
