@@ -70,7 +70,7 @@ const data = {
                         color: "blue",
                         href: "https://github.com/kaanarslann/Personal-Portfolio-Page"
                     },
-                    details: "A React + Vite project. It uses Context Api to share data between components. It features language and theme change options and stores user choices to Local Storage. Success and error notifications created using Toastify."
+                    details: "A React + Vite project. It uses Context Api to share data between components. It features a toggle language option and stores user choice to Local Storage. Success notification is created using Toastify."
                 },
                 {
                     direction: "flex flex-col-reverse md:flex-row",
@@ -198,7 +198,7 @@ const data = {
                         color: "blue",
                         href: "https://github.com/kaanarslann/Personal-Portfolio-Page"
                     },
-                    details: "Bir React + Vite projesi. Bileşenler arasında veri paylaşımı için Context API kullanılıyor. Dil ve tema değiştirme seçenekleri sunuyor ve kullanıcı tercihlerini Local Storage'a kaydediyor. Başarı ve hata bildirimlerini Toastify ile oluşturuyor."
+                    details: "Bir React + Vite projesi. Bileşenler arasında veri paylaşımı için Context API kullanılıyor. Dil değiştirme seçeneği sunuyor ve kullanıcı tercihini Local Storage'a kaydediyor. Başarı bildirimlerini Toastify ile oluşturuyor."
                 },
                 {
                     direction: "flex flex-col-reverse md:flex-row",
