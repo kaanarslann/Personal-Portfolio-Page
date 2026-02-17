@@ -1,3 +1,10 @@
+**Personal Portfolio Page**
+
+This is a React + Vite project. TailwindCSS used for styling.
+To improve readability and prevent code repetition sections such as Buttons, Project Cards and Skill Cards written as a seperate React component. 
+It uses Context Api to share data between components. It features a toggle language option and stores user choice to Local Storage. Success notifications created using Toastify.
+
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
