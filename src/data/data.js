@@ -107,7 +107,7 @@ const data = {
                     buttonType: {
                         size: "project",
                         color: "yellow",
-                        href: "https://pizza-order-page-8kc4ymneb-kaan-arslans-projects.vercel.app/"
+                        href: "https://pizza-order-page-blond.vercel.app/"
                     },
                     details: "A responsive pizza ordering application built with React. It uses React Router to navigate between pages, API-based date & time fetching (with fallback to local time) and React Hook Forms to validate order form.",
                 }
@@ -235,7 +235,7 @@ const data = {
                     buttonType: {
                         size: "project",
                         color: "yellow",
-                        href: "https://pizza-order-page-8kc4ymneb-kaan-arslans-projects.vercel.app/"
+                        href: "https://pizza-order-page-blond.vercel.app/"
                     },
                     details: "React ile geliştirilmiş, responsive tasarıma sahip bir pizza sipariş uygulaması. Sayfalar arasında dolaşmak için React Router, tarih ve zaman almak için API (hata durumunda lokal saat kullanır) ve sipariş formu verilerinin validasyonu için React Hook Forms kullanılıyor.",
                 }
