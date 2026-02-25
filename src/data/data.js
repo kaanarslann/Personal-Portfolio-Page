@@ -101,15 +101,15 @@ const data = {
                 {
                     direction: "flex flex-col-reverse md:flex-row",
                     tagColor: "yellow",
-                    techs: ["JavaScript", "React", "Axios"],
-                    title: "Pizza SPA Project",
+                    techs: ["React", "Axios", "Context API"],
+                    title: "Pizza Order Project",
                     image: Pizza,
                     buttonType: {
                         size: "project",
                         color: "yellow",
-                        href: "https://fsweb-s8-challenge-pizza-alpha.vercel.app/"
+                        href: "https://pizza-order-page-8kc4ymneb-kaan-arslans-projects.vercel.app/"
                     },
-                    details: "A React + Vite project. t uses React Router to navigate between components, Axios to post Order Form data and Cypress to test several success and fail scenarios.",
+                    details: "A responsive pizza ordering application built with React. It uses React Router to navigate between pages, API-based date & time fetching (with fallback to local time) and React Hook Forms to validate order form.",
                 }
             ]
         },
@@ -229,15 +229,15 @@ const data = {
                 {
                     direction: "flex flex-col-reverse md:flex-row",
                     tagColor: "yellow",
-                    techs: ["JavaScript", "React", "Axios"],
-                    title: "Pizza SPA Projesi",
+                    techs: ["React", "Axios", "Context API"],
+                    title: "Pizza Sipariş Projesi",
                     image: Pizza,
                     buttonType: {
                         size: "project",
                         color: "yellow",
-                        href: "https://fsweb-s8-challenge-pizza-alpha.vercel.app/"
+                        href: "https://pizza-order-page-8kc4ymneb-kaan-arslans-projects.vercel.app/"
                     },
-                    details: "Bir React + Vite projesi. Bileşenler arasında dolaşmak için React Router, sipariş formu verilerini göndermek için Axios ve çeşitli başarı / başarısızlık senaryolarını test etmek için Cypress kullanılıyor.",
+                    details: "React ile geliştirilmiş, responsive tasarıma sahip bir pizza sipariş uygulaması. Sayfalar arasında dolaşmak için React Router, tarih ve zaman almak için API (hata durumunda lokal saat kullanır) ve sipariş formu verilerinin validasyonu için React Hook Forms kullanılıyor.",
                 }
             ]
         },
